@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="A little birthday universe made with love for Paddu.">
+  <title>For Paddu, Always ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#home" class="brand">P<span>♡</span>P</a>
+    <span class="top-note">A LITTLE WORLD FOR PADDU</span>
+    <button class="music-toggle" id="musicToggle" aria-label="Play or pause music">
+      <span id="musicIcon">♫</span>
+      <span id="musicLabel">PLAY OUR SONG</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Opening -->
+    <section class="hero" id="home">
+      <div class="hero-stars" aria-hidden="true">✦　·　✧　　·　✦</div>
+      <span class="sunflower flower-one" aria-hidden="true">🌻</span>
+      <span class="sunflower flower-two" aria-hidden="true">🌻</span>
+      <span class="hero-cat" aria-hidden="true">🐈‍⬛</span>
+
+      <p class="eyebrow reveal">A letter from your best friend</p>
+      <h1 class="hero-title reveal">
+        To my<br>
+        <span>favourite</span><br>
+        person.
+      </h1>
+      <p class="hero-copy reveal">
+        Some people make life beautiful just by being in it.
+        You're one of those people, Paddu.
+      </p>
+
+      <button class="primary-button reveal" id="openIntro">
+        Open your little letter <span>♡</span>
+      </button>
+      <p class="scroll-hint">MADE JUST FOR YOU · SCROLL SLOWLY</p>
+
+      <div class="intro-letter" id="introLetter" hidden>
+        <span class="letter-sparkle">✧</span>
+        <p class="eyebrow">Before anything else...</p>
+        <h2>Today is all about you.</h2>
+        <p>
+          No expensive gift could ever hold all the things I want
+          to tell you. So I made you a tiny corner of the internet
+          instead — filled with little things that remind me of you.
+        </p>
+        <button class="text-button" id="exploreButton">
+          Let's begin, birthday girl ↓
+        </button>
+      </div>
+    </section>
+
+    <!-- Memories -->
+    <section class="memories section-pad" id="memories">
+      <p class="eyebrow reveal">Chapter 01 · The good old us</p>
+      <h2 class="section-title reveal">Little moments.<br><em>Big feelings.</em></h2>
+      <p class="section-copy reveal">
+        If I could keep my favourite memories in one little place,
+        I know exactly whose pictures would fill it.
+      </p>
+
+      <div class="photo-grid">
+        <figure class="polaroid reveal">
+          <img src="photo1.jpg" alt="A favourite photo of us"
+               onerror="this.style.display='none';this.nextElementSibling.hidden=false">
+          <div class="photo-placeholder" hidden>♡<br>ADD PHOTO 01</div>
+          <figcaption>my favourite human</figcaption>
+        </figure>
+
+        <figure class="polaroid reveal">
+          <img src="photo2.jpg" alt="Another favourite memory"
+               onerror="this.style.display='none';this.nextElementSibling.hidden=false">
+          <div class="photo-placeholder" hidden>✧<br>ADD PHOTO 02</div>
+          <figcaption>my happy place</figcaption>
+        </figure>
+
+        <figure class="polaroid reveal">
+          <img src="photo3.jpg" alt="A special moment together"
+               onerror="this.style.display='none';this.nextElementSibling.hidden=false">
+          <div class="photo-placeholder" hidden>🌻<br>ADD PHOTO 03</div>
+          <figcaption>us, always</figcaption>
+        </figure>
+      </div>
+
+      <p class="tiny-note">Three pictures. A thousand feelings. One special friendship.</p>
+    </section>
+
+    <!-- Favourite things -->
+    <section class="universe section-pad" id="universe">
+      <div class="universe-orbit orbit-one"></div>
+      <div class="universe-orbit orbit-two"></div>
+      <p class="eyebrow reveal">Chapter 02 · Her little universe</p>
+      <h2 class="section-title reveal">A world that feels<br><em>like you.</em></h2>
+
+      <div class="interest-grid">
+        <article class="interest reveal">
+          <span>🌻</span>
+          <h3>Sunflowers</h3>
+          <p>A little sunshine, even on cloudy days.</p>
+        </article>
+        <article class="interest reveal">
+          <span>🐈‍⬛</span>
+          <h3>Cats</h3>
+          <p>Soft paws, silly faces, endless cuteness.</p>
+        </article>
+        <article class="interest reveal">
+          <span>🎧</span>
+          <h3>Billie Eilish</h3>
+          <p>For all the feelings words can't explain.</p>
+        </article>
+        <article class="interest reveal">
+          <span>🌙</span>
+          <h3>Lana Del Rey</h3>
+          <p>Dreamy nights and a little bit of magic.</p>
+        </article>
+        <article class="interest reveal">
+          <span>🎬</span>
+          <h3>Summer love stories</h3>
+          <p>That The Summer I Turned Pretty kind of feeling.</p>
+        </article>
+        <article class="interest reveal">
+          <span>🍫</span>
+          <h3>Chocolate ice cream</h3>
+          <p>Because a little sweetness is always necessary.</p>
+        </article>
+      </div>
+
+      <p class="universe-footer reveal">
+        Different little things. All the little things that make you YOU. ♡
+      </p>
+    </section>
+
+    <!-- Music -->
+    <section class="music-section section-pad" id="music">
+      <p class="eyebrow reveal">Chapter 03 · Press play on happiness</p>
+      <h2 class="section-title reveal">For your ears,<br><em>and your heart.</em></h2>
+      <p class="section-copy reveal">
+        Your favourite songs, a quiet moment, and a birthday wish.
+        This little song is waiting just for you.
+      </p>
+
+      <div class="player reveal">
+        <div class="album-art">
+          <div class="album-moon"></div>
+          <span>♡</span>
+          <small>A SONG FOR PADDU</small>
+        </div>
+        <div class="track-info">
+          <p class="track-label">YOUR BIRTHDAY SOUNDTRACK</p>
+          <h3 id="trackTitle">A little song for you</h3>
+          <p id="trackArtist">Billie Eilish vibes ♡</p>
+        </div>
+        <audio id="birthdaySong" src="music.mp3" preload="metadata" loop></audio>
+        <div class="player-controls">
+          <span id="playStatus">MADE FOR THIS MOMENT</span>
+          <button id="playerButton" aria-label="Play music">▶</button>
+        </div>
+        <div class="progress-track"><span id="progress"></span></div>
+        <p class="player-hint" id="playerHint">
+          Add your chosen audio file as music.mp3 to enable playback.
+        </p>
+      </div>
+    </section>
+
+    <!-- Ice cream -->
+    <section class="icecream section-pad">
+      <p class="eyebrow reveal">Chapter 04 · Birthday treat</p>
+      <h2 class="section-title reveal">A scoop of<br><em>your happiness.</em></h2>
+      <button class="icecream-button reveal" id="icecreamButton" aria-label="Reveal your birthday treat">
+        🍫🍨
+        <span>TAP FOR A LITTLE TREAT</span>
+      </button>
+      <p id="treatMessage" class="treat-message" aria-live="polite">
+        A little birthday magic is waiting...
+      </p>
+    </section>
+
+    <!-- Main letter -->
+    <section class="letter-section section-pad" id="letter">
+      <p class="eyebrow reveal">Chapter 05 · The words that matter</p>
+      <h2 class="section-title reveal">One last thing,<br><em>my Paddu.</em></h2>
+      <p class="section-copy reveal">
+        There's something I want you to carry with you,
+        wherever life takes you.
+      </p>
+      <button class="primary-button reveal" id="revealLetter">
+        Open the letter from my heart 💌
+      </button>
+
+      <article class="heart-letter" id="heartLetter" hidden>
+        <div class="letter-top">TO MY PADDU, MY FAVOURITE PERSON</div>
+        <div class="letter-flower">✿</div>
+        <h3>Happy Birthday, my girl. ♡</h3>
+
+        <p>
+          I love you so much, Paddu. Out of all the friendships
+          I have experienced in my life, you are the best friend
+          I have ever found. I can say that without even having
+          to think twice. You are genuinely one of the best things
+          that has happened to me.
+        </p>
+
+        <p>
+          My biggest wish is that we stay together throughout our
+          lives, for as long as we are here. I hope we keep laughing
+          together, making silly memories, understanding each other,
+          and finding happiness even in the smallest moments.
+        </p>
+
+        <p>
+          My life has been so much more beautiful since the day we
+          met. Whenever we are together, happiness feels so natural.
+          We don't need anything extraordinary; sometimes, just being
+          together is enough to make an ordinary day feel special.
+        </p>
+
+        <p>
+          Even if life takes you far away someday, I'll always remember
+          you and the little things that make you who you are.
+          I know your favourite things and the places you love,
+          and so many little details about you will always remind me
+          of our friendship. No matter where you are, you'll always
+          have a special place in my heart.
+        </p>
+
+        <p>
+          I hope we always stay close, with the kind of understanding
+          that lets us be ourselves. I hope we can share our happiest
+          moments, talk through the difficult ones, laugh at our
+          silliest jokes, and keep making memories through every
+          new chapter of life.
+        </p>
+
+        <p>
+          You deserve a life full of love, peace, kindness, and
+          the happiness you've always dreamed of. I hope this new
+          year brings you beautiful surprises, people who appreciate
+          you, and countless reasons to smile.
+        </p>
+
+        <p>
+          Happiest birthday to you, my favourite person.
+          Thank you for coming into my life and making it brighter.
+          If I could choose all over again, I'd still be so grateful
+          to find you and call you my best friend.
+        </p>
+
+        <p>
+          Wherever you go, whatever changes, and however much time
+          passes, I hope you always remember how much our friendship
+          means to me. I will always be cheering for your happiness,
+          your dreams, and the person you're becoming.
+        </p>
+
+        <p class="letter-signature">
+          I love you so much, Paddu. ♡<br>
+          Your best friend, always.
+        </p>
+        <div class="letter-bottom">🌻 · MADE WITH ALL MY HEART · 🌻</div>
+      </article>
+    </section>
+
+    <section class="ending">
+      <span class="ending-flower">🌻</span>
+      <p class="eyebrow">And that is my birthday wish</p>
+      <h2>In every version<br>of life, <em>I'm glad I met you.</em></h2>
+      <p>Happy Birthday, Paddu.</p>
+      <span class="ending-heart">♡</span>
+      <p class="ending-small">A little corner of the internet. A forever kind of friendship.</p>
+      <a class="back-top" href="#home">BACK TO THE BEGINNING ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    Made with love, just for Paddu. 🖤
+  </footer>
+</body>
+</html>
+
